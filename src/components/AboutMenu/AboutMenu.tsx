@@ -69,7 +69,7 @@ const AboutMenu = () => {
                   components={[
                     <a
                       className='link'
-                      href='https://discord.gg/g3Qnwy4V6A'
+                      href='https://websim.ai/c/1M5eXmC9pWMlHOAGw'
                       target='_blank'
                     />,
                   ]}
