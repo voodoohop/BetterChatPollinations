@@ -48,16 +48,16 @@ const ConfigMenu = ({
     >
       <div className='p-6 border-b border-gray-200 dark:border-gray-600'>
         <ModelSelector _model={_model} _setModel={_setModel} />
-        <MaxTokenSlider
+        {/* <MaxTokenSlider
           _maxToken={_maxToken}
           _setMaxToken={_setMaxToken}
           _model={_model}
-        />
+        /> */}
         <TemperatureSlider
           _temperature={_temperature}
           _setTemperature={_setTemperature}
         />
-        <TopPSlider _topP={_topP} _setTopP={_setTopP} />
+        {/* <TopPSlider _topP={_topP} _setTopP={_setTopP} />
         <PresencePenaltySlider
           _presencePenalty={_presencePenalty}
           _setPresencePenalty={_setPresencePenalty}
@@ -65,7 +65,7 @@ const ConfigMenu = ({
         <FrequencyPenaltySlider
           _frequencyPenalty={_frequencyPenalty}
           _setFrequencyPenalty={_setFrequencyPenalty}
-        />
+        /> */}
       </div>
     </PopupModal>
   );

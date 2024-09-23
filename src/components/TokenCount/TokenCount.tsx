@@ -15,7 +15,8 @@ const TokenCount = React.memo(() => {
   );
 
   const model = useStore((state) =>
-    state.chats
+    // slightly hacky way to fix that chats in the history could be referencing a non-existent model
+    state.chats && modelCost[state.chats[state.currentChatIndex].config.model]?.prompt?.price
       ? state.chats[state.currentChatIndex].config.model
       : 'sur'
   );
