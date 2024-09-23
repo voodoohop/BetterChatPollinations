@@ -136,6 +136,10 @@
   a.link {
     @apply underline dark:hover:text-white hover:text-black;
   }
+
+  .prose {
+    font-size: 0.75rem !important;
+  }
 }
 
 @layer components {
