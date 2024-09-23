@@ -33,9 +33,9 @@ const AboutMenu = () => {
                 <Trans
                   i18nKey='sourceCode'
                   ns='about'
-                  components={[
+                  components={[ 
                     <a
-                      href='https://github.com/ztjhz/BetterChatGPT'
+                      href='https://websim.ai/c/XiuiLXO6EJvRPJR9I'
                       target='_blank'
                       className='link'
                     />,
@@ -87,7 +87,7 @@ const AboutMenu = () => {
                     ns='about'
                     components={[
                       <a
-                        href='https://github.com/ztjhz/BetterChatGPT'
+                        href='https://websim.ai/c/XiuiLXO6EJvRPJR9I'
                         target='_blank'
                         className='link'
                       />,
