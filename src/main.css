@@ -1,4 +1,5 @@
 @import url(Roboto.css);
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -17,6 +18,7 @@
   body {
     line-height: inherit;
     margin: 0;
+    font-family: 'Press Start 2P', cursive;
   }
 
   .dark body,
@@ -280,4 +282,16 @@
 .hljs-symbol,
 .hljs-title {
   color: #f22c3d;
+}
+
+@keyframes psychedelic {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.psychedelic-bg {
+  background: linear-gradient(270deg, #ff00ff, #00ffff, #00ff00, #ffff00);
+  background-size: 800% 800%;
+  animation: psychedelic 10s ease infinite;
 }

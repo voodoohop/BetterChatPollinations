@@ -66,6 +66,13 @@ module.exports = {
           850: '#2A2B32',
           900: '#202123',
         },
+        psychedelicPink: '#ff00ff',
+        psychedelicBlue: '#00ffff',
+        psychedelicGreen: '#00ff00',
+        psychedelicYellow: '#ffff00',
+      },
+      backgroundImage: {
+        'gradient-rainbow': 'linear-gradient(90deg, #ff00ff, #00ffff, #00ff00, #ffff00)',
       },
     },
   },
