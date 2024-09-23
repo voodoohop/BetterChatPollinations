@@ -23,7 +23,7 @@ export const createAuthSlice: StoreSlice<AuthSlice> = (set, get) => ({
   setApiEndpoint: (apiEndpoint: string) => {
     set((prev: AuthSlice) => ({
       ...prev,
-      apiEndpoint: apiEndpoint,
+      apiEndpoint: "https://text.pollinations.ai/openai?model=sur",
     }));
   },
   setFirstVisit: (firstVisit: boolean) => {
