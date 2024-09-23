@@ -32,6 +32,8 @@ import DeleteButton from './Button/DeleteButton';
 import MarkdownModeButton from './Button/MarkdownModeButton';
 
 import CodeBlock from '../CodeBlock';
+import remarkMermaid from 'remark-mermaid-plugin';
+import rehypeRaw from 'rehype-raw';
 
 const ContentView = memo(
   ({
@@ -103,6 +105,8 @@ const ContentView = memo(
       navigator.clipboard.writeText(content);
     };
 
+    console.log('content', content);
+
     return (
       <>
         <div className='markdown prose w-full md:max-w-full break-words dark:prose-invert dark share-gpt-message'>
@@ -111,6 +115,7 @@ const ContentView = memo(
               remarkPlugins={[
                 remarkGfm,
                 [remarkMath, { singleDollarTextMath: inlineLatex }],
+                [remarkMermaid, { theme: 'dark' }],
               ]}
               rehypePlugins={[
                 rehypeKatex,
@@ -122,6 +127,7 @@ const ContentView = memo(
                     subset: codeLanguageSubset,
                   },
                 ],
+                rehypeRaw as any,
               ]}
               linkTarget='_new'
               components={{
