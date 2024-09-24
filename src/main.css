@@ -150,6 +150,14 @@
     font-family: "Press Start 2P", cursive !important;
     font-size: 0.5rem !important;
   }
+
+  .bg-black {
+    background-color: transparent !important;
+  }
+
+  .prose pre {
+    background-color: transparent !important;
+  }
 }
 
 @layer components {
