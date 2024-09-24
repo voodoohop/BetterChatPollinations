@@ -52,6 +52,7 @@ export interface Folder {
 export type ModelOptions =
   | 'sur'
   | 'sur-mistral'
+  | 'claude'
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
 // | 'gpt-4-32k-0314'
