@@ -105,7 +105,6 @@ const ContentView = memo(
       navigator.clipboard.writeText(content);
     };
 
-    console.log('content', content);
 
     return (
       <>
