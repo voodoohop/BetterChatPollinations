@@ -12,7 +12,7 @@ export interface AuthSlice {
 
 export const createAuthSlice: StoreSlice<AuthSlice> = (set, get) => ({
   apiKey: "dummy",
-  apiEndpoint: "https://text.pollinations.ai/openai?model=sur",
+  apiEndpoint: "https://text.pollinations.ai/openai?model=sur-mistral",
   firstVisit: false,
   setApiKey: (apiKey: string) => {
     set((prev: AuthSlice) => ({
@@ -23,7 +23,7 @@ export const createAuthSlice: StoreSlice<AuthSlice> = (set, get) => ({
   setApiEndpoint: (apiEndpoint: string) => {
     set((prev: AuthSlice) => ({
       ...prev,
-      apiEndpoint: "https://text.pollinations.ai/openai?model=sur",
+      apiEndpoint: "https://text.pollinations.ai/openai?model=sur-mistral",
     }));
   },
   setFirstVisit: (firstVisit: boolean) => {

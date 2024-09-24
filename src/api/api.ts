@@ -20,6 +20,7 @@ export const getChatCompletion = async (
 
     const modelmapping: Partial<Record<ModelOptions, string>> = {
       'sur': 'sur',
+      'sur-mistral': 'sur-mistral',
     };
 
     const model = modelmapping[config.model] || config.model;
@@ -70,6 +71,7 @@ export const getChatCompletionStream = async (
 
     const modelmapping: Partial<Record<ModelOptions, string>> = {
       'sur': 'sur',
+      'sur-mistral': 'sur-mistral',
     };
 
     const model = modelmapping[config.model] || config.model;
