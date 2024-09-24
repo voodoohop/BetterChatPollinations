@@ -19,6 +19,7 @@ export const modelOptions: ModelOptions[] = [
   'sur',
   'sur-mistral',
   'claude',
+  'mistral',
 ];
 
 export const defaultModel = 'sur';
@@ -27,6 +28,7 @@ export const modelMaxToken = {
   'sur': 200000,
   'sur-mistral': 200000,
   'claude': 200000,
+  'mistral': 100000,
 };
 
 export const modelCost = {

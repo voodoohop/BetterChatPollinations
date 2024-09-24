@@ -1,53 +1,12 @@
 // languages that have translation files in `public/locales`
 export const i18nLanguages = [
-  // 'ar',
-  'da',
-  'de',
+
   'en',
-  'en-GB',
-  'en-US',
-  'es',
-  'fr',
-  'fr-FR',
-  'it',
-  'ja',
-  'ms',
-  'nb',
-  'ro',
-  'ru',
-  'sv',
-  // 'ug',
-  'yue',
-  'zh',
-  'zh-CN',
-  'zh-HK',
-  'zh-TW',
 ] as const;
 
 // languages that are selectable on the web page
 export const selectableLanguages = [
-  // 'ar',
-  'da',
-  'de',
-  // 'en',
-  'en-GB',
-  'en-US',
-  'es',
-  // 'fr',
-  'fr-FR',
-  'it',
-  'ja',
-  'ms',
-  'nb',
-  'ro',
-  'ru',
-  'sv',
-  // 'ug',
-  'yue',
-  // 'zh',
-  'zh-CN',
-  // 'zh-HK',
-  'zh-TW',
+  'en',
 ] as const;
 
 export const languageCodeToName = {
