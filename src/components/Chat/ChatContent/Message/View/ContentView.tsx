@@ -115,7 +115,9 @@ const ContentView = memo(
               remarkPlugins={[
                 remarkGfm,
                 [remarkMath, { singleDollarTextMath: inlineLatex }],
-                [remarkMermaid, { theme: 'dark' }],
+                [remarkMermaid, { 
+                  theme: 'dark',
+                }],
               ]}
               rehypePlugins={[
                 rehypeKatex,

@@ -140,6 +140,16 @@
   .prose {
     font-size: 0.75rem !important;
   }
+
+  .label, .label * {
+    font-family: "Press Start 2P", cursive !important;
+    font-size: 0.45rem !important;
+  }
+
+  svg .label {
+    font-family: "Press Start 2P", cursive !important;
+    font-size: 0.5rem !important;
+  }
 }
 
 @layer components {
