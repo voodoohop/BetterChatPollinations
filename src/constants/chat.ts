@@ -22,6 +22,7 @@ export const modelOptions: ModelOptions[] = [
   'mistral',
   'mistral-large',
   'command-r',
+  'unity',
 ];
 
 export const defaultModel = 'sur';
@@ -33,6 +34,7 @@ export const modelMaxToken = {
   'mistral': 100000,
   'mistral-large': 100000,
   'command-r': 128000,
+  'unity': 1000000,
 };
 
 export const modelCost = {
@@ -57,6 +59,10 @@ export const modelCost = {
     completion: { price: 0.002, unit: 1000 },
   },
   'command-r': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'unity': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },
