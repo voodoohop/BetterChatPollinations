@@ -37,12 +37,12 @@ export const createConfigSlice: StoreSlice<ConfigSlice> = (set, get) => ({
   theme: 'dark',
   hideMenuOptions: false,
   hideSideMenu: false,
-  autoTitle: false,
+  autoTitle: true,
   enterToSubmit: true,
   advancedMode: true,
   defaultChatConfig: _defaultChatConfig,
   defaultSystemMessage: _defaultSystemMessage,
-  inlineLatex: false,
+  inlineLatex: true,
   markdownMode: true,
   countTotalTokens: false,
   totalTokenUsed: {},
@@ -103,7 +103,7 @@ export const createConfigSlice: StoreSlice<ConfigSlice> = (set, get) => ({
   setInlineLatex: (inlineLatex: boolean) => {
     set((prev: ConfigSlice) => ({
       ...prev,
-      inlineLatex: inlineLatex,
+      inlineLatex: true,
     }));
   },
   setMarkdownMode: (markdownMode: boolean) => {
