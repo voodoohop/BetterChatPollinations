@@ -57,6 +57,7 @@ export type ModelOptions =
   | 'mistral-large'
   | 'command-r'
   | 'unity'
+  | 'rtist'
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
 // | 'gpt-4-32k-0314'

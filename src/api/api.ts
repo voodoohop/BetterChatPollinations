@@ -26,6 +26,7 @@ export const getChatCompletion = async (
       'mistral-large': 'mistral-large',
       'command-r': 'command-r',
       'unity': 'unity',
+      'rtist': 'rtist',
     };
 
     const model = modelmapping[config.model] || config.model;
@@ -82,6 +83,7 @@ export const getChatCompletionStream = async (
       'mistral-large': 'mistral-large',
       'command-r': 'command-r',
       'unity': 'unity',
+      'rtist': 'rtist',
     };
 
     const model = modelmapping[config.model] || config.model;
