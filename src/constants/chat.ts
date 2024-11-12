@@ -16,6 +16,7 @@ export const _defaultSystemMessage =
   `-`;
 
 export const modelOptions: ModelOptions[] = [
+  'openai',
   'sur',
   'sur-mistral',
   'claude',
@@ -35,8 +36,9 @@ export const modelMaxToken = {
   'mistral': 100000,
   'mistral-large': 100000,
   'command-r': 128000,
-  'unity': 1000000,
-  'rtist': 1000000,
+  'unity': 100000,
+  'rtist': 100000,
+  'openai': 128000,
 };
 
 export const modelCost = {
@@ -69,6 +71,10 @@ export const modelCost = {
     completion: { price: 0.002, unit: 1000 },
   },
   'rtist': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'openai': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },

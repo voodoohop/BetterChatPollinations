@@ -50,6 +50,7 @@ export interface Folder {
 }
 
 export type ModelOptions =
+  | 'openai'
   | 'sur'
   | 'sur-mistral'
   | 'claude'
@@ -58,6 +59,7 @@ export type ModelOptions =
   | 'command-r'
   | 'unity'
   | 'rtist'
+  
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
 // | 'gpt-4-32k-0314'

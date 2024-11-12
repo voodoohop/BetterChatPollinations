@@ -19,6 +19,7 @@ export const getChatCompletion = async (
     headers['api-key'] = apiKey;
 
     const modelmapping: Partial<Record<ModelOptions, string>> = {
+      'openai': 'openai',
       'sur': 'sur',
       'sur-mistral': 'sur-mistral',
       'claude': 'claude',
@@ -76,6 +77,7 @@ export const getChatCompletionStream = async (
     headers['api-key'] = apiKey;
 
     const modelmapping: Partial<Record<ModelOptions, string>> = {
+      'openai': 'openai',
       'sur': 'sur',
       'sur-mistral': 'sur-mistral',
       'claude': 'claude',
