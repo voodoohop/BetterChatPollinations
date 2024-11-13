@@ -25,6 +25,7 @@ export const modelOptions: ModelOptions[] = [
   'command-r',
   'unity',
   'rtist',
+  'searchgpt',
 ];
 
 export const defaultModel = 'sur';
@@ -39,6 +40,7 @@ export const modelMaxToken = {
   'unity': 100000,
   'rtist': 100000,
   'openai': 128000,
+  'searchgpt': 128000,
 };
 
 export const modelCost = {
@@ -75,6 +77,10 @@ export const modelCost = {
     completion: { price: 0.002, unit: 1000 },
   },
   'openai': {
+    prompt: { price: 0.0015, unit: 1000 },
+    completion: { price: 0.002, unit: 1000 },
+  },
+  'searchgpt': {
     prompt: { price: 0.0015, unit: 1000 },
     completion: { price: 0.002, unit: 1000 },
   },

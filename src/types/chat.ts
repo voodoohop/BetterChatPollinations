@@ -59,6 +59,7 @@ export type ModelOptions =
   | 'command-r'
   | 'unity'
   | 'rtist'
+  | 'searchgpt';
   
 // | 'gpt-3.5-turbo-0301';
 // | 'gpt-4-0314'
